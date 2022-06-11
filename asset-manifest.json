@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fastfood-empire/static/css/main.93301fd2.css",
+    "main.css": "/fastfood-empire/static/css/main.ec9b0869.css",
     "main.js": "/fastfood-empire/static/js/main.79750a6a.js",
     "static/js/787.ca799225.chunk.js": "/fastfood-empire/static/js/787.ca799225.chunk.js",
     "static/media/img4.jpg": "/fastfood-empire/static/media/img4.43cec658b73b0999accf.jpg",
@@ -23,12 +23,12 @@
     "static/media/table.svg": "/fastfood-empire/static/media/table.9eca93bc9b034c2fa6f6467411483efb.svg",
     "static/media/env.svg": "/fastfood-empire/static/media/env.7e7807b1f4a05cae838fc6cbab59a95c.svg",
     "index.html": "/fastfood-empire/index.html",
-    "main.93301fd2.css.map": "/fastfood-empire/static/css/main.93301fd2.css.map",
+    "main.ec9b0869.css.map": "/fastfood-empire/static/css/main.ec9b0869.css.map",
     "main.79750a6a.js.map": "/fastfood-empire/static/js/main.79750a6a.js.map",
     "787.ca799225.chunk.js.map": "/fastfood-empire/static/js/787.ca799225.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93301fd2.css",
+    "static/css/main.ec9b0869.css",
     "static/js/main.79750a6a.js"
   ]
 }
