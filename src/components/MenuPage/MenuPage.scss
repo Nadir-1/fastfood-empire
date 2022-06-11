@@ -1,0 +1,83 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.menu {
+    @include flexCtr;
+    flex-direction: $col;
+    background-color: $light;
+    min-height: $pHeight;
+
+    h1 {
+        padding-top: $v5px;
+        color: $primary;
+    }
+
+    .menu-items {
+        @include flexCtr;
+        flex: wrap;
+        flex-wrap: wrap;
+        color: $dark;
+        margin-bottom: $v1px;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        h1 {
+            color: $light;
+            padding: $v3px;
+        }
+
+        img {
+            width: 286px;
+            height: 180px;
+        }
+    }
+
+    .search-box {
+        height: 40px;
+        padding: $v2px;
+        border-radius: 40px;
+        background-Color: $dark;
+
+        .search-btn {
+            @include flexCtr;
+            float: right;
+            width: $v3px;
+            height: $v3px;
+            border-radius: 50%;
+            background-Color: $dark;
+            border: none;
+        }
+
+        .inp-search {
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            font-size: 16px;
+            line-height: $v3px;
+            width: 240px;
+            color: $light;
+        }
+    }
+
+    .myFilterA {
+        color: $primary  !important;
+        background-color: $dark  !important;
+        border: $border1;
+        width: $v5px;
+    }
+
+    .myFilter {
+        color: $light  !important;
+        background-color: $primary  !important;
+        margin: $v1px;
+        width: $v5px;
+        border: $border1;
+
+        &:hover {
+            color: $primary  !important;
+            background-color: $dark  !important;
+        }
+    }
+}

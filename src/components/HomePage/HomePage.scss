@@ -1,0 +1,154 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.home {
+    background: url('../../images/img4.jpg');
+    background-position: $ctr;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: $pHeight;
+    height: fit-content;
+    position: $rel;
+
+    .type {
+        padding: 15% 5% 0 5%;
+        z-index: $zFront;
+
+        p {
+            color: $light;
+            font-weight: $B;
+        }
+
+        .slogan {
+            color: $primary;
+            font-weight: $B;
+            font-size: 3rem;
+        }
+
+        .more-btn {
+            background-color: $primary;
+            border: $border1;
+            color: $light;
+            margin-bottom: $v1px;
+
+            &:hover {
+                color: $primary ;
+                background-color: $dark;
+            }
+        }
+
+    }
+}
+
+.home2 {
+    background-color: $primary;
+    padding-bottom: $v3px;
+
+    .best {
+        @include flexCtr;
+        color: $dark;
+        margin-bottom: $v1px;
+
+        h1 {
+            color: $light;
+            padding: $v3px;
+        }
+
+        img {
+            width: auto;
+            height: 180px;
+        }
+    }
+
+}
+
+.home3 {
+    background-color: $light;
+    padding-bottom: $v3px;
+    font-weight: $B;
+
+    .top-h1 {
+        color: $dark;
+        padding-top: $v3px;
+        text-align: $ctr;
+    }
+
+    .top-h5 {
+        color: $primary;
+        text-align: $ctr;
+        padding-bottom: $v3px;
+    }
+
+    .top-c {
+        @include flexCtr;
+        flex-direction: $col;
+        color: $dark;
+        margin-bottom: $v1px;
+    }
+}
+
+
+.home4 {
+    background: url('../../images/img4.jpg');
+    padding-bottom: $v3px;
+    position: $rel;
+
+    h1 {
+        text-align: $ctr;
+        padding: $v3px;
+        color: $light;
+    }
+
+    .slide {
+        padding: 1rem;
+        border: 0.2rem solid #00000033;
+        border-radius: .5rem;
+        position: $rel;
+        background-color: $light;
+        height: 20rem;
+
+        p {
+            color: $dark;
+        }
+
+        .user {
+            display: $fl;
+            gap: 0.5rem;
+            align-items: $ctr;
+            padding-bottom: 1.5rem;
+
+            img {
+                height: 3rem;
+                width: 3rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            span {
+                color: $dark;
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+.home-ctn {
+    z-index: $zFront;
+}
+
+.overlay {
+    position: $abs;
+    min-height: $full;
+    height: fit-content;
+    min-width: $full;
+    left: 0;
+    top: 0;
+    background: #3230318c;
+    z-index: $zBack;
+}
+
+@media screen and (max-width: 400px) {
+    .review .swiper-container {
+        width: 300px;
+    }
+}

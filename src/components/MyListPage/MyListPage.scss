@@ -1,0 +1,98 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.MyShoppings {
+    min-height: $pHeight;
+    margin-bottom: $v1px;
+    background-color: $light;
+
+    .shH1 {
+        text-align: $ctr;
+        padding-top: $v5px;
+        color: $primary;
+    }
+
+    .sh-row {
+        border: $border2B;
+        margin: $v2px;
+
+        .col-sh {
+            padding: 0 !important;
+
+            img {
+                height: $v5px;
+                width: $v5px;
+                float: left;
+                margin-right: $v1px;
+            }
+        }
+
+        .sh-tr,
+        .sh-nbr {
+            @include flexCtr;
+        }
+
+        .sh-nbr>* {
+            margin-right: 3px;
+        }
+
+        .trash {
+            color: red;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .sh-total {
+        background-color: $light;
+        border: $border2B;
+        position: $rel;
+        height: 150px;
+
+        .sh-summary {
+            text-align: $ctr;
+            border-bottom: $border2;
+            font-size: 1.25rem;
+        }
+
+
+        .checkout-btn {
+            width: $full;
+            padding: 0;
+            margin: 0;
+            display: block;
+            border: none;
+            background-color: $primary;
+            position: $abs;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************/
+
+@media screen and (min-width:768px) {
+    .sh-total {
+        margin-left: $v2px;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .sh-h5 {
+        font-size: 0.9rem !important;
+    }
+}

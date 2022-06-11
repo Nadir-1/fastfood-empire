@@ -1,0 +1,139 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+nav {
+    font-weight: $B;
+    z-index: $zFront;
+    font-size: 1.25rem;
+    background-color: $dark;
+    padding: 0 !important;
+
+    .logoP {
+        height: $v4px;
+        width: $v4px;
+    }
+
+    .nav-br {
+        color: $primary;
+    }
+
+    .nav-link {
+        text-align: $ctr;
+        color: $light;
+    }
+
+    .active {
+        color: $primary  !important;
+    }
+
+    .nav-link:hover {
+        color: $primary;
+    }
+
+    .special-btn-1>*,
+    .special-btn-2>* {
+        display: inline-block;
+    }
+
+    .special-btn-1 {
+        margin-left: auto;
+        margin-right: $v3px;
+    }
+
+    .special-btn-2 {
+        margin-left: $v4px;
+    }
+
+    .special-btn-1,
+    .special-btn-2 {
+
+        .user-icon {
+            margin-right: $v1px;
+            font-size: 1.75rem;
+            background: none;
+            border: none;
+            color: $primary;
+        }
+
+        .cart-btn {
+            position: $rel;
+
+            .shop-cart {
+                font-size: 1.75rem;
+                color: $primary;
+            }
+
+            .cart-basket {
+                @include flexCtr;
+                font-size: 0.9rem;
+                position: $abs;
+                top: -6px;
+                right: -5px;
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                background-color: $light;
+                color: $dark;
+            }
+        }
+
+    }
+}
+
+.modal {
+    width: 400px !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+
+    .mod-body {
+        @include flexCtr;
+        flex-direction: $col;
+
+        .mod-ti {
+            @include flexCtr;
+        }
+
+        .inp {
+            width: 350px;
+        }
+    }
+
+    .sub-btn {
+        color: $light;
+        background-color: $primary  !important;
+        border: $border1  !important;
+
+        &:hover {
+            color: $primary  !important;
+            background-color: $dark  !important;
+            border: $border1  !important;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .special-btn-2 {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .special-btn-1 {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .nav-br {
+        display: none;
+    }
+
+    .modal {
+        width: 300px !important;
+
+        .inp {
+            width: 250px !important;
+        }
+    }
+}

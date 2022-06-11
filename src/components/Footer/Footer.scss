@@ -1,0 +1,51 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.footer {
+    color: $light;
+    background-color: $dark;
+    font-size: 0.7rem;
+    width: 100vw;
+
+    .logoP2 {
+        height: 30px;
+        width: 30px;
+    }
+
+    .sub-btn {
+        color: $light;
+        background-color: $primary  !important;
+        border: $border1  !important;
+
+        &:hover {
+            color: $primary  !important;
+            background-color: $dark  !important;
+            border: $border1  !important;
+        }
+    }
+
+    .f-title {
+        color: $primary;
+        font-weight: $B;
+        padding: $v1px;
+        font-size: 0.85rem;
+    }
+
+    .inp0 {
+        padding: $v1px;
+        width: 180px;
+    }
+
+    .f-title2 {
+        text-align: $ctr;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .secF {
+        @include flexCtr;
+        flex-direction: $col;
+        padding-top: $v2px;
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.success {
+    @include flexCtr;
+    flex-direction: $col;
+    background-color: $light;
+
+    h1 {
+        padding-top: $v5px;
+    }
+
+    .env {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .env {
+        width: 300px;
+        height: 300px;
+    }
+}

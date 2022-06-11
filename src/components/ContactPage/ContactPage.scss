@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+
+.contact {
+    margin-bottom: 5px;
+
+    .book {
+        height: $imgS1;
+        width: $imgS1;
+    }
+
+    #head {
+        padding-top: 60px !important;
+        text-align: $ctr;
+        color: $primary;
+    }
+
+    .cover-img {
+        @include flexCtr;
+
+        img {
+            width: $imgS1;
+            height: $imgS1;
+        }
+    }
+
+    .sub-res-btn {
+        color: $light;
+        background-color: $primary;
+        border: $border1;
+
+        &:hover {
+            color: $primary;
+            background-color: $dark;
+            border: $border1;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .contact .cover-img img {
+        width: $imgS2;
+        height: $imgS2;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .contact .cover-img img {
+        width: 250px;
+        height: 250px;
+    }
+}

@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.errorP {
+    height: $pHeight;
+    width: $full;
+    @include flexCtr;
+    flex-direction: $col;
+
+}
+
+.errorP h1 {
+    color: red;
+}

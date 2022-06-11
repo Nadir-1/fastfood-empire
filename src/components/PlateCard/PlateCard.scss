@@ -1,0 +1,34 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.plateCard {
+    border: $border2  !important;
+    margin: 10px;
+}
+
+.cardCenter {
+    @include flexCtr;
+    flex-direction: $col;
+}
+
+.centerBody {
+    @include flexCtr;
+    flex-direction: $col;
+    color: $dark;
+}
+
+.centerTitle {
+    color: $primary;
+    text-align: $ctr;
+}
+
+.btnCart {
+    color: $light  !important;
+    border: $border1  !important;
+    background-color: $primary  !important;
+
+    &:hover {
+        color: $primary  !important;
+        background-color: $dark  !important;
+    }
+}
