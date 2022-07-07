@@ -56,7 +56,7 @@ const NavigationBar = (props) => {
                             <Form.Label>Password</Form.Label>
                             <Form.Control type="password" placeholder="Password" className="inp" />
                         </Form.Group>
-                        <a href="#" style={{ display: 'block', textAlign: 'center' }}>Sign Up</a>
+                        <p className="sign-upL">Sign-Up</p>
                         <Button className='sub-btn' onClick={handleClose}>
                             Submit
                         </Button>

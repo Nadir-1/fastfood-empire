@@ -11,8 +11,8 @@ const Header = () => {
                 <div className='type col-12'>
                     <h3 className='slogan'>
                         <Typewriter
-                            words={['We Dont\'t Serve food ',
-                                'And We Dont\'t Care If You Are Hungry',
+                            words={['We Don\'t Serve food ',
+                                'And We Don\'t Care If You Are Hungry',
                                 'But...', 'We Are Going To Entertain Your Stomach']}
                             loop={1}
                             cursor
